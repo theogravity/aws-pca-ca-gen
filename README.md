@@ -46,3 +46,9 @@ These are the only files you should care about.
 - Use `/pca/certs/ca.cert.pem` for the `Certificate Chain`
 
 Your PCA CA should be ready to go at this point!
+
+### See Also
+
+- [aws-pca](https://www.npmjs.com/package/aws-pca) - node.js library to generate and fetch certificates using PCA
+- https://smallstep.com/blog/everything-pki.html - If you do not know how certs work, read this first
+
