@@ -11,10 +11,16 @@ scripts to generate a correct root CA and sign the CSR with the right parameters
 - http://bluechiptek.com/blog/using-aws-private-certificate-authority-certificates-to-secure-access-to-kubernetes-helm
 - https://jamielinux.com/docs/openssl-certificate-authority/create-the-root-pair.html
 
+If you do not know anything about Private Key Infrastructure (PKI) or how certificates work, please read:
+
+https://smallstep.com/blog/everything-pki.html
+
+It will be one of the most valuable reads of your engineering career as you will encounter working with certificates frequently.
+
 ## Notice
 
 The configuration used to generate the key and certificates may not necessarily represent secure or best practices.
-Please consult or work with a security expert to determine the right private key infrastructure for your organization.
+Please consult or work with a security expert to determine the right Private Key Infrastructure for your organization.
 The provided scripts are for educational purposes only. See `LICENSE` for more info.
 
 ## Steps
@@ -36,19 +42,18 @@ if you use a password, use the same one when prompted.
 
 These are the only files you should care about.
 
-- `/pca/certs/ca.cert.pem`: Root CA certificate
-- `/pca/certs/pca.cert.pem`: Subordinate CA certificate used for AWS PCA
-- `/pca/private/ca.key.pem`: Root CA certificate key
+- `pca/certs/ca.cert.pem`: Root CA certificate
+- `pca/certs/pca.cert.pem`: Subordinate CA certificate used for AWS PCA
+- `pca/private/ca.key.pem`: Root CA certificate key
 
 ### PCA CA Import
 
-- Use `/pca/certs/pca.cert.pem` for the `Certificate Body`
-- Use `/pca/certs/ca.cert.pem` for the `Certificate Chain`
+- Use `pca/certs/pca.cert.pem` for the `Certificate Body`
+- Use `pca/certs/ca.cert.pem` for the `Certificate Chain`
 
 Your PCA CA should be ready to go at this point!
 
 ### See Also
 
 - [aws-pca](https://www.npmjs.com/package/aws-pca) - node.js library to generate and fetch certificates using PCA
-- https://smallstep.com/blog/everything-pki.html - If you do not know how certs work, read this first
 
