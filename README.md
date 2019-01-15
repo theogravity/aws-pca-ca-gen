@@ -1,6 +1,6 @@
 # aws-pca-ca-gen
 
-Generate a root CA and create a signed subordinate CA from the generated AWS PCA (Private Certificate Authority) CSR.
+Generate a root CA and create a signed subordinate CA from the generated [AWS PCA (Private Certificate Authority)](https://aws.amazon.com/certificate-manager/private-certificate-authority/) CSR.
 
 ## Introduction
 
