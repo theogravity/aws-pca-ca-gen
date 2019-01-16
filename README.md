@@ -23,6 +23,8 @@ The configuration used to generate the key and certificates may not necessarily 
 Please consult or work with a security expert to determine the right Private Key Infrastructure for your organization.
 The provided scripts are for educational purposes only. See `LICENSE` for more info.
 
+Depending on your perspective, AWS PCA can be expensive. As of current writing, maintaining a PCA CA runs at $400.00 USD / mo, while each created certificate is $0.75 USD. Be aware that using this library to create certificiates carries a cost. I am not responsible for any charges incurred by using this library. You are responsible for understanding the costs of running the PCA.
+
 ## Steps
 
 ### Generate the root CA
